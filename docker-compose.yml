@@ -33,4 +33,5 @@ services:
             - ./mariadb:/var/lib/mysql
 networks:
     default:
-        driver: tunnel
+        external:
+            name: tunnel
