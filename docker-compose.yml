@@ -31,3 +31,6 @@ services:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?err}
         volumes:
             - ./mariadb:/var/lib/mysql
+networks:
+    default:
+        driver: tunnel
